@@ -1,0 +1,26 @@
+/* ------------- Theme Color ------------- */
+$o-theme-color-palettes: (
+    (
+        'alpha': $theme_color,
+        'beta': #ffc000,
+        'gamma': #5C5B80,
+        'delta': #5B899E,
+        'epsilon': #E46F78,
+    ),
+);
+
+/* ------------- Color Palettes ------------- */
+$o-color-palettes: (
+    (
+        'body': null, // Default to bootstrap
+        'menu': #3fb125,
+        'footer': #F9F9F9,
+        'text': #495057,
+        'h1':  #495057,
+        'h2':  #495057,
+        'h3':  #495057,
+        'h4':  #495057,
+        'h5':  #495057,
+        'h6':  #495057,
+    ),
+);
