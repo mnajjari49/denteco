@@ -19,8 +19,13 @@
                         <div class="navbar navbar-default" role="navigation">
                           <div class="navbar-header">
                             <h4 class="panel-title navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
-                              <i class="fa fa-bars" aria-hidden="false"></i> Categories<span class="pull-right fa fa-angle-down"></span>
+                              <i class="fa fa-bars" aria-hidden="False"></i> Categories<span class="pull-right fa fa-angle-down"></span>
                             </h4>
+
+                              <t t-set="counter1" t-value="prueba"/>
+                              <li><t t-esc="counter1"/> </li>
+
+
                           </div>
                           <div class="navbar-collapse sidebar-navbar-collapse collapse show">
                             <ul class="nav navbar-nav">
