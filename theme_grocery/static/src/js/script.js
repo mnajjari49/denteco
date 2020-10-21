@@ -65,7 +65,7 @@ odoo.define('theme_grocery.script', function (require) {
         $(this).find(".hover-button").addClass("hover-btn-anim");
     });
     $("#products_grid .oe_product").mouseleave(function(){
-        $(this).find(".hover-button").css({"display": "block"});
+        $(this).find(".hover-button").css({"display": "none"});
         $(this).find(".oe_product_image").css({"opacity": "1", "transition": "1s"});
         $(this).find(".hover-button").removeClass("hover-btn-anim").css({"transition": "2s"});
     });
