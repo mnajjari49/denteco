@@ -24,7 +24,7 @@
 
 
                             <t t-set="counter1" t-value="0"/>
-                            <t t-esc="counter1"/>
+                            <li><t t-esc="counter1"/></li>
 
 
 
