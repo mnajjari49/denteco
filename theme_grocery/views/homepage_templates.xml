@@ -22,8 +22,7 @@
                               <i class="fa fa-bars" aria-hidden="False"></i> Categories<span class="pull-right fa fa-angle-down"></span>
                             </h4>
 
-                              <t t-set="counter1" t-value="prueba"/>
-                              <li><t t-esc="counter1"/> </li>
+                            <li>hola</li>
 
 
                           </div>
