@@ -25,7 +25,7 @@
                             <t t-foreach="website.get_homepage_categories()" t-as="menuCategory">
                               <t t-if="counter1<4">
                                 <li><a t-att-href="'/shop/category/' + slug(category)"><t t-esc="category.name"/></a></li>
-                                <t t-set="counter1" t-value="counter1+1"
+                                <t t-set="counter1" t-value="counter1+1"/>
                               </t>
                             </t>
                           </div>
