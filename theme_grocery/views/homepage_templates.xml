@@ -23,8 +23,8 @@
                             </h4>
 
 
-                            <t t-set="counter1" t-value="0"/>
-                            <li><t t-esc="counter1"/></li>
+                              <t t-set="counter1" t-value="hola"/>
+                              <li><t t-esc="counter1"/></li>
 
 
 
