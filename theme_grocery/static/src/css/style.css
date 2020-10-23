@@ -2454,8 +2454,3 @@ h4.oe_price_h4 {
     }
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: #495057 !important;
-    background-color: white !important;
-    border-color: black black white !important ;
-}
