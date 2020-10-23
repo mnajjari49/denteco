@@ -26,23 +26,6 @@ body {
     font-family: segoeui;
     font-size: 12px;
 }
-
-
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: #495057 !important;
-    background-color: white !important;
-    border-color: black black white !important ;
-}
-
-
-.trending-product ul li > a.active:hover, .trending-product ul li > a.active:focus {
-    background-color: white !important;
-    border-color: black black white !important;
-    color: #495057 !important;
-}
-
-
-
 .row-container {
     margin-left: -15px;
     margin-right: -15px;
@@ -2471,4 +2454,16 @@ h4.oe_price_h4 {
     }
 }
 
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #495057 !important;
+    background-color: white !important;
+    border-color: black black white !important ;
+}
+
+
+.trending-product ul li > a.active:hover, .trending-product ul li > a.active:focus {
+    background-color: white !important;
+    border-color: black black white !important;
+    color: #495057 !important;
+}
 
