@@ -2471,8 +2471,14 @@ h4.oe_price_h4 {
     color:red;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     .menu_web{
+    display:none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .phone_menu{
     display:none;
     }
 }
