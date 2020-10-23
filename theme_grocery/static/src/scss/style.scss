@@ -66,9 +66,9 @@
     }
 
     .trending-product ul li > a.active {
-        border-color: #FFF #FFF theme-color('primary') !important;
+        border-color: black black white !important;
         &:hover, &:focus {
-            border-color: #FFF #FFF theme-color('primary') !important;
+            border-color: black black white !important;
         }
     }
     .best-seller {
