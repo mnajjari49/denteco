@@ -418,7 +418,6 @@ h1.logo-content {
     width: 1px;
     height: 24px;
     background-color: #e5e5e5;
-    border
     position: absolute;
     left: 128px;
     top: 50%;
@@ -2453,4 +2452,10 @@ h4.oe_price_h4 {
     .search-header, .cart-header {
         line-height: 17px;
     }
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #495057 !important;
+    background-color: white !important;
+    border-color: black black white !important ;
 }
