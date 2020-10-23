@@ -22,34 +22,43 @@
                               <i class="fa fa-bars" aria-hidden="False"></i> Categories<span class="pull-right fa fa-angle-down"></span>
                             </h4>
 
-                              <t t-set="total" t-value="0"/>
+                            <t t-set="total" t-value="0"/>
                                 <t t-set="stop" t-value="4"/>
                                 <t t-foreach="website.get_homepage_categories()" t-as="category">
-                                    <t t-if="total!=6">
-                                        <li>
-                                          <a t-att-href="'/shop/category/' + slug(category)">
-                                            <t t-esc="category.name"/>
-                                          </a>
-                                        </li>
-                                        <t t-set="total" t-value="total+1"></t>
-                                    </t>
-                                </t>
-                          </div>
-
-                          <t t-set="total" t-value="0"></t>
-                          <div class="navbar-collapse sidebar-navbar-collapse collapse show">
-                            <ul class="nav navbar-nav">
-                              <t t-foreach="website.get_homepage_categories()" t-as="category">
-
-                                <t t-if="total>=6">
+                                  <t t-if="total!=10">
                                     <li>
                                       <a t-att-href="'/shop/category/' + slug(category)">
                                         <t t-esc="category.name"/>
                                       </a>
                                     </li>
+                                    <t t-set="total" t-value="total+1"></t>
                                 </t>
-                                
-                                <t t-set ="total" t-value="total+1"></t>
+                             </t>
+
+
+
+                          </div>
+
+
+                          <t t-set="total" t-value="0"></t>
+
+
+                          <div class="navbar-collapse sidebar-navbar-collapse collapse show">
+                            <ul class="nav navbar-nav">
+                              <t t-foreach="website.get_homepage_categories()" t-as="category">
+
+
+                            <t t-if="total>=10">
+                            <li>
+                              <a t-att-href="'/shop/category/' + slug(category)">
+                                <t t-esc="category.name"/>
+                                </a>
+                            </li>
+                            </t>    
+                            <t t-set ="total" t-value="total+1"></t>
+
+
+
                               </t>
                             </ul>
                           </div>
