@@ -22,19 +22,20 @@
                               <i class="fa fa-bars" aria-hidden="False"></i> Categories<span class="pull-right fa fa-angle-down"></span>
                             </h4>
 
-                            <t t-set="total" t-value="0"/>
-                                <t t-set="stop" t-value="4"/>
-                                <t t-foreach="website.get_homepage_categories()" t-as="category">
-                                  <t t-if="total!=10">
-                                    <li>
-                                      <a t-att-href="'/shop/category/' + slug(category)">
-                                        <t t-esc="category.name"/>
-                                      </a>
-                                    </li>
-                                    <t t-set="total" t-value="total+1"></t>
-                                </t>
-                             </t>
-
+                            <div class="menu_web">
+                              <t t-set="total" t-value="0"/>
+                                  <t t-set="stop" t-value="4"/>
+                                  <t t-foreach="website.get_homepage_categories()" t-as="category">
+                                    <t t-if="total!=10">
+                                      <li>
+                                        <a t-att-href="'/shop/category/' + slug(category)">
+                                          <t t-esc="category.name"/>
+                                        </a>
+                                      </li>
+                                      <t t-set="total" t-value="total+1"></t>
+                                  </t>
+                              </t>
+                            </div>
 
 
                           </div>
@@ -48,14 +49,23 @@
                               <t t-foreach="website.get_homepage_categories()" t-as="category">
 
 
-                            <t t-if="total>=10">
-                            <li>
-                              <a t-att-href="'/shop/category/' + slug(category)">
-                                <t t-esc="category.name"/>
-                                </a>
-                            </li>
-                            </t>    
-                            <t t-set ="total" t-value="total+1"></t>
+                              <div class = "menu_web">    
+                                  <t t-if="total>=10">
+                                      <li>
+                                          <a t-att-href="'/shop/category/' + slug(category)">
+                                              <t t-esc="category.name"/>
+                                          </a>
+                                      </li>
+                                      </t>
+                                  <t t-set ="total" t-value="total+1"></t>
+                              </div>
+                              <div class="phone_menu">
+                                  <li>
+                                      <a t-att-href="'/shop/category/' + slug(category)">
+                                          <t t-esc="category.name"/>
+                                      </a>
+                                  </li>
+                              </div>
 
 
 

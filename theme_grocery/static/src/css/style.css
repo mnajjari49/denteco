@@ -2482,3 +2482,8 @@ h4.oe_price_h4 {
     display:none;
     }
 }
+
+.oe_search_box{
+    color:red;
+    background-color: red;
+}
