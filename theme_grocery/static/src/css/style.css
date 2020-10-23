@@ -2484,6 +2484,6 @@ h4.oe_price_h4 {
 }
 
 .oe_search_box{
-    color:red;
-    background-color: red;
+    color:red !important;
+    background-color: red !important;
 }
